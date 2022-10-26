@@ -7,3 +7,51 @@
     margin: 0;
 }
 
+/*------------
+    MAIN
+------------*/
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.items-container{
+    width: 37.5rem;
+    height: 18.75rem;
+    position: relative;
+}
+
+.item{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    position: absolute;
+}
+
+.arrow-icons{
+    position: absolute;
+    z-index: 100;
+    background-color: #d5cadb;
+    transform: translate(-50%);
+    border-radius: 50%;
+    padding: .1875rem;
+}
+
+#arrow-up{
+    margin-top: .3125rem;
+    left: 50%;
+}
+
+#arrow-down{
+    margin-bottom: .3125rem;
+    left: 50%;
+    bottom: 0;
+}
+
+.active{
+    display: block;
+}
+
