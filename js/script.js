@@ -49,27 +49,30 @@ for (let i = 0; i < images.length; i++) {
     itemsContainer.append(imgBox);
 }
 
-let showImg = document.querySelectorAll(".item");
-showImg[0].classList.add("active");
-
 let position = 0;
+let showImg = document.querySelectorAll(".item");
+showImg[position].classList.add("active");
+
 arrowDown.addEventListener("click", function(){
-    showImg[0 + position].classList.remove("active");
-    position = position + 1;
-    if(position == 5){
+    if(position === showImg.length - 1){
+        showImg[position].classList.remove("active");
         position = 0;
+        showImg[position].classList.add("active");
+    } else {
+        showImg[position].classList.remove("active");
+        position += 1;
+        showImg[position].classList.add("active");
     }
-    showImg[0 + position].classList.toggle("active");
 });
 
 arrowUp.addEventListener("click", function(){
-    if (position == 0){
-        showImg[position].classList.toggle("active");
-    }
-    showImg[4 - position].classList.toggle("active");
-    position += 1;
-    showImg[6 - position].classList.toggle("active");
-    if(position == 5){
-        position = 0;
+    if(position === 0){
+        showImg[position].classList.remove("active");
+        position = showImg.length - 1;
+        showImg[position].classList.add("active");
+    } else {
+        showImg[position].classList.remove("active");
+        position -= 1;
+        showImg[position].classList.add("active");
     }
 });
