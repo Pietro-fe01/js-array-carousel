@@ -73,27 +73,3 @@ arrowUp.addEventListener("click", function(){
         position = 0;
     }
 });
-
-
-// let position = 0;
-// arrowDown.addEventListener("click", function(){
-//     showImg[position].classList.toggle("active");
-//     position += 1;
-//     if(position == 5){
-//         position = 0;
-//     }
-//     showImg[position].classList.toggle("active");
-// });
-
-// let x = 0;
-// arrowUp.addEventListener("click", function(){
-//     if (x == 0){
-//         showImg[x].classList.toggle("active");
-//     }
-//     showImg[4 - x].classList.toggle("active");
-//     x += 1;
-//     showImg[6 - x].classList.toggle("active");
-//     if(x == 5){
-//         x = 0;
-//     }
-// });
