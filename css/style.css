@@ -31,6 +31,10 @@ main{
     position: absolute;
 }
 
+
+/*---------------
+ARROW - BUTTONS
+---------------*/
 .arrow-icons{
     position: absolute;
     z-index: 100;
@@ -38,6 +42,7 @@ main{
     transform: translate(-50%);
     border-radius: 50%;
     padding: .1875rem;
+    cursor: pointer;
 }
 
 #arrow-up{
@@ -51,6 +56,9 @@ main{
     bottom: 0;
 }
 
+/*------------------------
+CLASS THAT'LL SHOW IMAGES
+------------------------*/
 .active{
     display: block;
 }
